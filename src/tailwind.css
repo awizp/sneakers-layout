@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    /* custom colors */
+    --color-primary: hsl(26, 100%, 55%);
+    --color-secondary: hsl(25, 100%, 94%);
+    --color-pale-orange: hsl(25, 100%, 59%);
+
+    --color-dark-blue: hsl(220, 13%, 13%);
+    --color-dark-grayishblue: hsl(219, 9%, 45%);
+    --color-grayishblue: hsl(220, 14%, 75%);
+    --color-light-grayishblue: hsl(223, 64%, 88%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-bg-black: hsla(0, 0%, 0%, .75);
+
+    /* custom breakpoint */
+    --breakpoint-xs: calc(450/16 *1rem);
+}
+
+@layer components {
+    .thumbnail {
+        @apply w-full rounded-xl hover:border-2 hover:border-primary transition cursor-pointer relative overflow-hidden;
+    }
+}
